@@ -12,6 +12,6 @@ Management wants to understand ATM usage patterns, downtime assessment and trans
 ## Skills demonstrated
 The following SQL skills were incorporated into this project:
 - Data manipulation and modification with SQL (INSERT INTO, UPDATE).
-- Data cleaning with SQL and use of CTEs.
+- Data cleaning with SQL using CTEs.
 - Set operations, looping constructs and conditional logic (UNION, WHILE, BEGIN, END, CASE).
-  The following
+The following
