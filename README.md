@@ -21,7 +21,7 @@ The following Power BI skills were incorporated into this project:
 - Knowledge of DAX and measures (SWITCH, RELATED, VAR, RETURN)
 - Data visualization on Power BI.
 ## Data sourcing
-The data sets was provided by DataKliq - an online educational institution that help data enthusiasts start their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ with the motto as "...empowering transactions, ensuring connectivity" `😄`. This [link](https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP) provides access to the data sets.
+The data sets was provided by DataKliq - an online educational institution helping people start their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ with the motto as "...empowering transactions, ensuring connectivity" `😄`. This [link](https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP) provides access to the data sets.
 ## Data transformation
 The data sets were imported into SQL Server Managemnt Studio via the Import and Export Wizard.  A total of eleven (11) tables containing the following information about: ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
 
@@ -30,4 +30,7 @@ The ATM transactions for all 5 states were merged and totaled 6,523,792 rows of 
 Additionally, missing values in the ATM maintenance table were replaced with either the Mean or Mode value as appropriate.
 
 Here's the complete [SQL query](https://github.com/emmywritescode/SQL-Queries/blob/main/DATAKLIQ%20ATM%20Performance%20Optimization.sql) used for the data transformation process.
- 
+## Data modeling
+The model is a star schema. Overall, there are 7 dimension tables and 1 fact table (transactions) as seen below. For adequate analysis, a bridge table (ATM Id) containing unique ATM ids was created to build a relationship between the transactions table and the ATM maintenance table.
+![](model.png)
+## Analysis and Visualization
