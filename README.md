@@ -12,11 +12,22 @@ Management wants to understand ATM usage patterns, downtime assessment and trans
 ## Skills demonstrated
 The following SQL skills were incorporated into this project:
 - Data manipulation and modification with SQL (INSERT INTO, UPDATE).
-- Data cleaning with SQL using CTEs (WITH).
-- Set operations, looping constructs and conditional logic (UNION, WHILE, BEGIN, END, CASE).
+- Data cleaning with SQL using CTEs and Windows Function (WITH, DENSE_RANK()).
+- Set operations, looping constructs and conditional logic (UNION, WHILE, DECLARE, BEGIN, END, CASE).
 
-The following Power BI skills were into this project:
+The following Power BI skills were incorporated into this project:
 - Data transformation using Power Query Editor.
 - Data modeling on Power BI.
-- Knowledge of DAX and measures (SWITCH, RELATED)
+- Knowledge of DAX and measures (SWITCH, RELATED, VAR, RETURN)
+- Data visualization on Power BI.
+## Data sourcing
+The data sets was provided by DataKliq - an online educational institution that help people begin their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ. This [https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP](link) provides access to the data sets.
+## Data transformation
+The data sets were imported into SQL Server Managemnt Studio via the Import and Export Wizard.  A total of eleven (11) tables containing the following information about: ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
+
+The ATM transactions for all 5 states were merged and totaled 6,523,792 rows of data. A new calendar table was created to include all dates from 2019 to 2023 since the one provided did not.
+
+Additionally, missing values in the ATM maintenance table were replaced with either the Mean or Mode value as appropriate.
+
+Here's the complete [https://github.com/emmywritescode/SQL-Queries/blob/main/DATAKLIQ%20ATM%20Performance%20Optimization.sql](SQL query) used for the data transformation.
  
