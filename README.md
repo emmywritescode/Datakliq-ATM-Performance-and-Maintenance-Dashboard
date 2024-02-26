@@ -41,6 +41,7 @@ Two report pages were prepared to show the ATM usage patterns separately from th
 - The 'Lekki ATM' was the most frequented by customers accounting for over 190K transactions.
 - More transactions occurred during Q1 and Q2 compared to Q3 and Q4.
 ![](usage.jpg)
+
 The ATM maintenance dashboard revealed the following:
 - Overall, there was an Average Transaction Success Rate of 93.19% and an Average Error Rate of 1.82%
 - The Average Downtime Frequency was 33% while the Average Dwell Time was 111.64 seconds.
