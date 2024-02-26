@@ -16,6 +16,7 @@ The following SQL skills were incorporated into this project:
 - Set operations, looping constructs and conditional logic (UNION, WHILE, DECLARE, BEGIN, END, CASE).
 
 The following Power BI skills were incorporated into this project:
+- Connection to SQL Server.
 - Data transformation using Power Query Editor.
 - Data modeling on Power BI.
 - Knowledge of DAX and measures (SWITCH, RELATED, VAR, RETURN)
@@ -34,7 +35,17 @@ Here's the complete [SQL query](https://github.com/emmywritescode/SQL-Queries/bl
 The model is a star schema. Overall, there are 7 dimension tables and 1 fact table (transactions) as seen below. For adequate analysis, a bridge table (ATM Id) containing unique ATM ids was created to build a relationship between the transactions table and the ATM maintenance table.
 ![](model.png)
 ## Analysis and Visualization
-Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance dashboard. On the first, analysis revealed the following:
-- A total of 6.52 million transactions were carried out in all five states over the period.
+Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance metrics. On the former, analysis revealed the following:
+- A total of 6.52 million transactions was carried out by 8,828 customers in all five states over the entire period.
+- At 462K, most transactions occurred around 17:00:00 or 5:00 pm.
+- The 'Lekki ATM' was the most frequented by customers accounting for over 190K transactions.
+- More transactions occurred during Q1 and Q2 compared to Q3 and Q4.
+![](usage.jpg)
+The ATM maintenance dashboard revealed the following:
+- Overall, there was an Average Transaction Success Rate of 93.19% and an Average Error Rate of 1.82%
+- The Average Downtime Frequency was 33% while the Average Dwell Time was 111.64 seconds.
+- Apapa ATM had the highest transaction failure rate at 2.00%.
+![](maintenance.jpg)
+## Recommendations
 
 
