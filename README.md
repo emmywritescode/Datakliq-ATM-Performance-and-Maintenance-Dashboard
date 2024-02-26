@@ -23,7 +23,7 @@ The following Power BI skills were incorporated into this project:
 ## Data sourcing
 The data sets was provided by DataKliq - an online educational institution helping people start their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ with the motto as "...empowering transactions, ensuring connectivity" `😄`. This [link](https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP) provides access to the data sets.
 ## Data transformation
-The data sets were imported into SQL Server Managemnt Studio via the Import and Export Wizard.  A total of eleven (11) tables containing the following information about: ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
+The data sets were imported into SQL Server Managemnt Studio via the Import and Export Wizard.  A total of eleven (11) tables containing information about ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
 
 The ATM transactions for all 5 states were merged and totaled 6,523,792 rows of data. A new calendar table was created to include all dates from 2019 to 2023 since the one provided did not.
 
@@ -34,3 +34,7 @@ Here's the complete [SQL query](https://github.com/emmywritescode/SQL-Queries/bl
 The model is a star schema. Overall, there are 7 dimension tables and 1 fact table (transactions) as seen below. For adequate analysis, a bridge table (ATM Id) containing unique ATM ids was created to build a relationship between the transactions table and the ATM maintenance table.
 ![](model.png)
 ## Analysis and Visualization
+Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance dashboard. On the first, analysis revealed the following:
+- A total of 6.52 million transactions were carried out in all five states over the period.
+
+
