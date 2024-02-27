@@ -35,6 +35,7 @@ Here's the complete [SQL query](https://github.com/emmywritescode/SQL-Queries/bl
 Lastly, a column 'Age Category' was created to group customers into either of 'Teenager', 'Young Adult', 'Adult', or  'Senior' according to their ages.
 ## Data modeling
 The model is a star schema. Overall, there are 7 dimension tables and 1 fact table (transactions) as seen below. For adequate analysis, a bridge table (ATM Id) containing unique ATM ids was created to build a relationship between the transactions table and the ATM maintenance table.
+
 ![](model.png)
 ## Analysis and Visualization
 Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance metrics. On the former, analysis revealed the following:
