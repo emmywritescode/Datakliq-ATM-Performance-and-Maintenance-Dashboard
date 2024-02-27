@@ -31,13 +31,15 @@ The ATM transactions for all 5 states were merged and totaled 6,523,792 rows of 
 Additionally, missing values in the ATM maintenance table were replaced with either the Mean or Mode value as appropriate.
 
 Here's the complete [SQL query](https://github.com/emmywritescode/SQL-Queries/blob/main/DATAKLIQ%20ATM%20Performance%20Optimization.sql) used for the data transformation process.
+
+Lastly, a column 'Age Category' was created to group customers into either of 'Teenager', 'Young Adult', 'Adult', or  'Senior' according to their ages.
 ## Data modeling
 The model is a star schema. Overall, there are 7 dimension tables and 1 fact table (transactions) as seen below. For adequate analysis, a bridge table (ATM Id) containing unique ATM ids was created to build a relationship between the transactions table and the ATM maintenance table.
 ![](model.png)
 ## Analysis and Visualization
 Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance metrics. On the former, analysis revealed the following:
-- A total of 6.52 million transactions was carried out by 8,828 customers in all five states over the entire period.
-- At 462K, most transactions occurred around 17:00:00 or 5:00 pm.
+- A total of 6.52 million transactions were carried out by 8,828 customers in all five states over the entire period.
+- At 462K, most transactions occurred around 17:00:00 (5:00 pm) and Thursdays had the highest transaction of any day of the week at 938K.
 - The 'Lekki ATM' was the most frequented by customers accounting for over 190K transactions.
 - More transactions occurred during Q1 and Q2 compared to Q3 and Q4.
 ![](usage.jpg)
@@ -45,9 +47,12 @@ Two report pages were prepared to show the ATM usage patterns separately from th
 The ATM maintenance dashboard revealed the following:
 - Overall, there was an Average Transaction Success Rate of 93.19% and an Average Error Rate of 1.82%
 - The Average Downtime Frequency was 33% while the Average Dwell Time was 111.64 seconds.
-- Apapa ATM had the highest transaction failure rate at 2.00%.
+- 'Apapa ATM' had the highest Average Transaction Error Rate at 2.00%.
+
+Interact with the full report on the Power BI service [here]()
 ![](maintenance.jpg)
-## Recommendations
+## Conclusion & Recommendations
+To optimize the performance and maintenance of the Datakliq's ATM facilities, several key strategies emerge from this analysis. Firstly, attention should be paid to peak transaction times, particularly around 5:00 pm, by ensuring adequate staffing and cash reserves to prevent service disruptions. Additionally, a focus on ATM location optimization is essential, with priority given to high-traffic areas such as 'Lekki ATM', while underperforming machines may be relocated to more promising locations. Furthermore, management should investigate reasons for transaction fluctuations between quarters to adjust resource allocation and marketing strategies. The average error rate and specific issues like 'Apapa ATM' errors can be addressed through software updates, maintenance checks, and employee training. Minimal downtime and dwell time can be achieved through proactive maintenance, monitoring systems, and software optimization. In conclusion, Management should collect and utilize customer feedback to tailor optimization efforts to customer needs and preferences while implementing predictive maintenance to anticipate and prevent issues, ensuring continuous ATM availability and reliability.
 
 
 
