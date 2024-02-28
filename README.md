@@ -1,14 +1,14 @@
 # Datakliq ATM Usage and Performance Optimization
 ![](intro.jpg)
 ## Introduction
-This is a SQL & Power BI project on a fictional financial dataset of a retail bank's ATM facilities across five states in Nigeria. The goal of the project is to understand the usage, performance and maintenance metrics of the ATM facilities in order to devise an optimization strategy.
+This is a SQL & Power BI project on a fictional financial dataset of a retail bank's ATM facilities across five states in Nigeria. The goal of the project is to understand the usage, performance and maintenance metrics of the ATM facilities to devise an optimization strategy.
 ## Problem statement
 Management wants to understand ATM usage patterns, downtime assessment and transaction success rate. Among what management wants to determine are:
 - Peak hours/days of ATM usage.
 - Locations experiencing the highest ATM traffic.
 - Seasonal trends in ATM usage.
 - ATM Downtime frequency.
-- Locations experiencing higher transaction failure rate.
+- Locations experiencing higher transaction failure rates.
 ## Skills demonstrated
 The following SQL skills were incorporated into this project:
 - Data manipulation and modification with SQL (INSERT INTO, UPDATE).
@@ -22,9 +22,9 @@ The following Power BI skills were incorporated into this project:
 - Knowledge of DAX and measures (SWITCH, RELATED, VAR, RETURN)
 - Data visualization on Power BI.
 ## Data sourcing
-The data sets was provided by DataKliq - an online educational institution helping people start their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ with the motto as "...empowering transactions, ensuring connectivity" `😄`. This [link](https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP) provides access to the data sets.
+The data sets were provided by Datakliq - an online educational institution helping people start their data journey. In homage to their invaluable contribution to the data space, the fictional retail bank was aptly named DATAKLIQ with the motto "...empowering transactions, ensuring connectivity" `😄`. This [link](https://1drv.ms/u/s!AqSRjMFOmr0yk2QO22MdQJTigu1j?e=UAhalP) provides access to the data sets.
 ## Data transformation
-The data sets were imported into SQL Server Managemnt Studio via the Import and Export Wizard.  A total of eleven (11) tables containing information about ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
+The data sets were imported into SQL Server Management Studio via the Import and Export Wizard.  A total of eleven (11) tables containing information about ATM transactions, Customers, ATM maintenance, ATM locations, Calendar and Hour lookup tables were imported.
 
 The ATM transactions for all 5 states were merged and totaled 6,523,792 rows of data. A new calendar table was created to include all dates from 2019 to 2023 since the one provided did not.
 
@@ -39,7 +39,7 @@ The model is a star schema. Overall, there are 7 dimension tables and 1 fact tab
 ![](model.png)
 
 ## Analysis and Visualization
-Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance metrics. On the former, analysis revealed the following:
+Two report pages were prepared to show the ATM usage patterns separately from the ATM maintenance metrics. On the former, the analysis revealed the following:
 - A total of 6.52 million transactions were carried out by 8,828 customers in all five states over the entire period.
 - At 462K, most transactions occurred around 17:00:00 (5:00 pm) and Thursdays had the highest transaction of any day of the week at 938K.
 - The 'Lekki ATM' was the most frequented by customers accounting for over 190K transactions.
