@@ -54,7 +54,7 @@ The ATM maintenance dashboard revealed the following:
 
 Interact with the full report on the Power BI service [here]()
 
-![](maintenance.jpg)
+![](performance.jpg)
 
 ## Conclusion & Recommendations
 To optimize the performance and maintenance of Datakliq's ATM facilities, several key strategies emerge from this analysis. Firstly, attention should be paid to peak transaction times, particularly around 5:00 pm, by ensuring adequate staffing and cash reserves to prevent service disruptions. Additionally, a focus on ATM location optimization is essential, with priority given to high-traffic areas such as 'Lekki ATM', while underperforming machines may be relocated to more promising locations. Furthermore, management should investigate reasons for transaction fluctuations between quarters to adjust resource allocation and marketing strategies. The average error rate and specific issues like 'Apapa ATM' errors can be addressed through software updates, maintenance checks, and employee training. Minimal downtime and dwell time can be achieved through proactive maintenance, monitoring systems, and software optimization. In conclusion, Management should collect and utilize customer feedback to tailor optimization efforts to customer needs and preferences while implementing predictive maintenance to anticipate and prevent issues, ensuring continuous ATM availability and reliability.
