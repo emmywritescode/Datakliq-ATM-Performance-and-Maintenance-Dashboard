@@ -52,7 +52,7 @@ The ATM maintenance dashboard revealed the following:
 - The Average Downtime Frequency was 33% while the Average Dwell Time was 111.64 seconds.
 - 'Apapa ATM' had the highest Average Transaction Error Rate at 2.00%.
 
-Interact with the full report on the Power BI service [here]()
+Interact with the full report on the Power BI service [here](https://app.powerbi.com/view?r=eyJrIjoiZjRiYmUxNTUtODgwYy00ZmRmLWJjZTEtODU4ZmI3OTI0YWRmIiwidCI6ImQ4NzlkOWE0LTZmODEtNDU4NS1iYWJjLWM4OGZjMzBmZTc3YiJ9)
 
 ![](performance.jpg)
 
