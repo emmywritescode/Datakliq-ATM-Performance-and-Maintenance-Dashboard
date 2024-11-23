@@ -48,7 +48,7 @@ Two report pages were prepared to show the ATM usage patterns separately from th
 ![](usage.jpg)
 
 The ATM maintenance dashboard revealed the following:
-- Overall, there was an Average Transaction Success Rate of 93.19% and an Average Error Rate of 1.82%
+- Overall, there was an Average Transaction Success Rate of 93.19% and an Average Error Rate of 1.82%.
 - The Average Downtime Frequency was 33% while the Average Dwell Time was 111.64 seconds.
 - 'Apapa ATM' had the highest Average Transaction Error Rate at 2.00%.
 
